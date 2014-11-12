@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>度身衣:中国最受欢迎的在线服装订制交易平台.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,16 +37,16 @@
                         <li><a href="#about">关于</a></li>
                         <li><a href="#contact">联系我们</a></li>
                         <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu" role="menu">-->
-                                <!--<li><a href="#">Action</a></li>-->
-                                <!--<li><a href="#">Another action</a></li>-->
-                                <!--<li><a href="#">Something else here</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li class="dropdown-header">Nav header</li>-->
-                                <!--<li><a href="#">Separated link</a></li>-->
-                                <!--<li><a href="#">One more separated link</a></li>-->
-                            <!--</ul>-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li class="dropdown-header">Nav header</li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                        <!--</ul>-->
                         <!--</li>-->
 
                     </ul>
@@ -58,6 +58,7 @@
                             <input type="password" placeholder="Password" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-success">登录</button>
+                        <button id="btnRegister" class="btn btn-success">注册</button>
                     </form>
                 </div>
             </div>
@@ -65,8 +66,6 @@
 
     </div>
 </div>
-
-
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -106,6 +105,10 @@
         <span class="sr-only">Next</span>
     </a>
 </div><!-- /.carousel -->
+<!-- Content -->
+<button id="btnRegister2" type="button" class="btn btn-success">注册</button>
+<div id="content1" class="container" style="height: 22px;border: solid red 1px;">
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -113,15 +116,20 @@
     <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 </footer>
 
-
+<!-- Placed at the end of the document so the pages load faster -->
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="lib/jquery/jquery-2.1.1.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
 <!--<script src="lib/doc/docs.min.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+<script src="script/frame/frame.js"></script>
+<script type="text/javascript">
+    $("#btnRegister2").click(function(){
+        $("#content1").load("http://localhost/page/register.html");
+    });
+</script>
 </body>
 </html>
 
