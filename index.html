@@ -58,7 +58,7 @@
                             <input type="password" placeholder="Password" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-success">登录</button>
-                        <button id="btnRegister" class="btn btn-success">注册</button>
+                        <button id="btnRegister" type="button" class="btn btn-success">注册</button>
                     </form>
                 </div>
             </div>
@@ -106,8 +106,8 @@
     </a>
 </div><!-- /.carousel -->
 <!-- Content -->
-<button id="btnRegister2" type="button" class="btn btn-success">注册</button>
-<div id="content1" class="container" style="height: 22px;border: solid red 1px;">
+
+<div id="content" class="container">
 </div>
 
 <!-- FOOTER -->
@@ -120,16 +120,12 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <script src="lib/jquery/jquery-2.1.1.js"></script>
-<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <!--<script src="lib/doc/docs.min.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 <script src="script/frame/frame.js"></script>
-<script type="text/javascript">
-    $("#btnRegister2").click(function(){
-        $("#content1").load("http://localhost/page/register.html");
-    });
-</script>
+
 </body>
 </html>
 
